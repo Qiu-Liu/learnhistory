@@ -9,6 +9,9 @@ spring:
       host: localhost
       port: 8500
       discovery:
-        serviceName: service-consulDemo
-
-
+        #已ip形式注册到consul
+        prefer-ip-address: true
+  redis:
+    host: 123.207.23.223
+    port: 6379
+    password: 319812

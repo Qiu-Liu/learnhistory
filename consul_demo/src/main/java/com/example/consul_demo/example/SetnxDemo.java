@@ -21,7 +21,7 @@ public class SetnxDemo {
     private final static String redisKey="redisKey";
 
 
-    public void setRedisLock(){
+    public synchronized void setRedisLock(){
         String threadId = String.valueOf(Thread.currentThread().getId());
         try {
 
